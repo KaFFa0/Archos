@@ -6,7 +6,7 @@ N=$3
 BACKUP_DIR="./backup"
 
 USAGE=$(df -h | awk 'NR==3 {print $5}' | sed 's/%//')
-echo $USAGE
+#echo $USAGE
 
 
 if [ "$USAGE" -ge "$MAX_USAGE" ]; then
